@@ -24,7 +24,7 @@ def main():
     with open('C:\Users\edemi\OneDrive\Documentos\GitHub\Target-Sistemas\Faturamento\Faturamento.json', 'r') as file:
         data = json.load(file)
     
-    faturamentos = data['faturamentos']
+    faturamentos = data['Faturamento']
     
     # Calcula os valores
     menor, maior, dias_acima = calcular_faturamento(faturamentos)
