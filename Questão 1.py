@@ -1,8 +1,8 @@
 # Variaveis
 
-indice = 13;
-soma = 0;
-K = 0;
+indice = 13
+soma = 0
+K = 0
 
 # Calculo da soma
 
