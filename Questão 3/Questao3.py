@@ -1,7 +1,8 @@
 import json
+import os
 
 def calcular_faturamento(faturamentos):
-    # Remove os dias sem faturamento e extrai os valores
+    # Filtra os dias sem faturamento e extrai os valores
     valores = [f['valor'] for f in faturamentos if f['valor'] > 0]
 
     if not valores:
@@ -20,11 +21,17 @@ def calcular_faturamento(faturamentos):
     return menor_faturamento, maior_faturamento, dias_acima_media
 
 def main():
+    
+    # Caminho para o arquivo JSON dentro da pasta "Questão 3"
+    pasta = 'Questão 3'
+    arquivo_json = 'faturamento.json'
+    caminho_arquivo = os.path.join(pasta, arquivo_json)
+    
     # Lê o arquivo JSON
-    with open('C:\Users\edemi\OneDrive\Documentos\GitHub\Target-Sistemas\Faturamento\Faturamento.json', 'r') as file:
+    with open(caminho_arquivo, 'r') as file:
         data = json.load(file)
     
-    faturamentos = data['Faturamento']
+    faturamentos = data['faturamentos']
     
     # Calcula os valores
     menor, maior, dias_acima = calcular_faturamento(faturamentos)
