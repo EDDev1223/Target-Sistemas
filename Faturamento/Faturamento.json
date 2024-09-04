@@ -1,0 +1,18 @@
+{
+    "faturamentos": [
+      {"dia": 1, "valor": 2500},
+      {"dia": 2, "valor": 3000},
+      {"dia": 3, "valor": 2900},
+      {"dia": 4, "valor": 3200},
+      {"dia": 5, "valor": 3100},
+      {"dia": 6, "valor": 3300},
+      {"dia": 7, "valor": 3400},
+      {"dia": 8, "valor": 2500},
+      {"dia": 9, "valor": 2700},
+      {"dia": 10, "valor": 2800},
+      {"dia": 11, "valor": 3000},
+      {"dia": 12, "valor": 2900}
+      
+    ]
+  }
+  
